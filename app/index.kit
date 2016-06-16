@@ -1,0 +1,38 @@
+  <!--@include header.html-->
+  <!--@include nav.html-->
+
+  <div class="container">
+
+    <div class="starter-template">
+      <h1>Bootstrap starter template..</h1>
+      <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    </div>
+
+  </div>
+  
+  <script type="text/javascript">
+  require(['./dd','jquery'], function(d,$) {
+
+    console.log(d,$);
+    //确认取消；
+    new d.alert({
+      "title":"标题党",
+      "content":"提示消息",
+      "ok":{
+        "name":"好",
+        "action":function(){
+          console.log("ok");
+        }
+      },
+      "cancel":{
+        "name":"否",
+        "action":function(){
+          console.log("cancel");
+        }
+      }
+    });
+    // d.say("hello");
+
+  });
+  </script>
+  <!--@include footer.html-->
